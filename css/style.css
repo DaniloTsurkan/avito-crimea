@@ -1,1 +1,171 @@
 @import url("reset.css");
+
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/MullerBoldItalic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/MullerLight.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/MullerBold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/MullerMedium.woff') format('woff'), ;
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/MullerRegular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	font-family: Muller;
+	background-color: #0A0A09;
+}
+
+body.lock {
+	overflow: hidden;
+}
+
+[class*="__container"] {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+
+
+.header {}
+
+.header__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 5;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding-top: 27px;
+}
+
+.header__logo {}
+
+.header__menu {}
+
+.menu-header {}
+
+.menu-header__list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 125px;
+	row-gap: 20px;
+}
+
+.menu-header__item {}
+
+.menu-header__link {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: -1px;
+	opacity: 0.4;
+}
+
+.header__contact {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: -1px;
+}
+
+.menu__icon {
+	display: none;
+}
+
+@media (max-width: 992.98px) {
+	.menu-header__list {
+		flex-direction: column;
+	}
+
+	.menu-header {
+		position: fixed;
+		padding-top: 100px;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: -100%;
+		transition: all 0.5s ease 0s;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	.menu-header.active {
+		left: 0;
+	}
+
+	.menu__icon {
+		z-index: 5;
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 18px;
+	}
+
+	.menu__icon span,
+	.menu__icon::before,
+	.menu__icon::after {
+		position: absolute;
+		left: 0;
+		height: 2px;
+		width: 100%;
+		transition: all 0.3s ease 0s;
+		background-color: #5DBEB4;
+	}
+
+	.menu__icon::before,
+	.menu__icon::after {
+		content: "";
+	}
+
+	.menu__icon::before {
+		top: 0;
+	}
+
+	.menu__icon::after {
+		bottom: 0;
+	}
+
+	.menu__icon span {
+		top: 50%;
+		transform: scale(1) translate(0px, -50%);
+	}
+
+	.header__contact,
+	.menu-header__link {
+		opacity: 1;
+	}
+}

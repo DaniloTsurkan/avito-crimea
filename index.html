@@ -4,17 +4,41 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>avito crimea</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 	<div class="wrapper">
-		<header class="header"></header>
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo">
+					<img src="img/Header/Logo.svg" alt="Logo">
+				</div>
+				<nav data-da=".header, 992" class="header__menu menu-header">
+					<ul class="menu-header__list">
+						<li class="menu-header__item">
+							<a href="#" class="menu-header__link">Наш парк</a>
+						</li>
+						<li class="menu-header__item">
+							<a href="#" class="menu-header__link">Условия аренды</a>
+						</li>
+						<li class="menu-header__item">
+							<a href="#" class="menu-header__link">Отзывы</a>
+						</li>
+						<li class="menu-header__item">
+							<a href="#" class="menu-header__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<a data-da=".menu-header__list, 992" href="tel:+79781173839" class="header__contact">+79781173839</a>
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+			</div>
+		</header>
 		<main class="page"></main>
 		<footer class="footer"></footer>
 	</div>
-	<script src="js/script.js"></script>
+	<script type="module" src="js/script.js"></script>
 </body>
 
 </html>
