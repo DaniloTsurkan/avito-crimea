@@ -41,7 +41,7 @@
 }
 
 body {
-	font-family: Muller;
+	font-family: "Muller", sans-serif;
 	background-color: #0A0A09;
 	color: #fff;
 }
@@ -545,4 +545,261 @@ body.lock {
 		margin-left: -70px;
 		margin-top: 20px;
 	}
+}
+
+
+.lease {
+	padding-top: 110px;
+	padding-bottom: 110px;
+}
+
+.lease__container {}
+
+.lease__form {}
+
+.form-lease__title {
+	color: #d4cc7b;
+	font-size: 48px;
+	font-style: italic;
+	font-weight: 700;
+	margin-bottom: 0;
+	letter-spacing: -3px;
+	text-align: center;
+	margin-bottom: 74px;
+}
+
+.form-lease {
+	padding: 59px 89px 32px 88px;
+	box-shadow: 0 4px 30px 0#000;
+	border: 1px solid #888;
+	border-radius: 20px;
+	text-align: center;
+	position: relative;
+	background-color: #050C14;
+}
+
+.form-lease::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	filter: blur(200px);
+	border-radius: 100%;
+	background-color: #fff;
+	z-index: -2;
+	opacity: 0.2;
+}
+
+.form-lease__input {
+	width: 100%;
+	color: #0c0c0b;
+	font-size: 24px;
+	font-weight: 400;
+	letter-spacing: -2px;
+	height: 36px;
+}
+
+.form-lease__input:not(:last-child) {
+	margin-bottom: 29px;
+}
+
+.form-lease__body {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 80px;
+}
+
+
+@media (max-width:479.98px) {
+	.form-lease__body {
+		grid-template-columns: 1fr;
+		row-gap: 40px;
+	}
+}
+
+.form-lease__column {}
+
+.form-lease__btn {
+	text-align: center;
+	color: #0c0f12;
+	font-size: 24px;
+	font-weight: 400;
+	letter-spacing: -2px;
+	box-shadow: 0 0 5px 0#efac00;
+	border: 1px solid #f8b500;
+	background-color: #ECD774;
+	padding: 7px 71px;
+	border-radius: 10px;
+	margin-top: 36px;
+}
+
+
+.reviews {
+	padding-top: 110px;
+	padding-bottom: 110px;
+}
+
+.reviews__container {}
+
+.reviews__title {
+	color: #d4cc7b;
+	font-size: 48px;
+	font-style: italic;
+	font-weight: 700;
+	letter-spacing: -3px;
+	text-align: center;
+	margin-bottom: 90px;
+}
+
+.reviews__slider {}
+
+.slider-reviews {}
+
+.swiper {
+	overflow: hidden;
+}
+
+.swiper-wrapper {
+	display: flex;
+	box-sizing: content-box;
+}
+
+.swiper-slide {
+	flex-shrink: 0;
+}
+
+.slider-reviews__slide {
+	aspect-ratio: 247 / 405;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+}
+
+.slider-reviews__slide img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+
+@media (max-width:747.98px) {
+	.form-lease__body {
+		column-gap: 20px;
+	}
+
+	.form-lease {
+		padding: 39px 49px 22px 48px;
+	}
+
+	.form-lease__btn {
+		width: 100%;
+		padding: 7px 0;
+	}
+}
+
+.swiper-pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 13px;
+	margin-top: 36px;
+}
+
+.swiper-pagination-bullet {
+	display: block;
+	width: 21px;
+	height: 21px;
+	background-color: #C4C4C4;
+	border-radius: 50%;
+	transition: all 0.3s ease 0s;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: #fff;
+}
+
+.footer {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.footer__container {}
+
+.footer__body {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.footer__column {}
+
+.column-footer {}
+
+.column-footer__logo {}
+
+.column-footer__text {}
+
+.column-footer__text p:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.column-footer__title {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 127.5%;
+	/* 31/24 */
+	letter-spacing: -2px;
+}
+
+.column-footer__title:not(:last-child) {
+	margin-bottom: 24px;
+}
+
+.column-footer__phone {
+	display: flex;
+	align-items: start;
+}
+
+.phone-footer {
+	margin-top: 27px;
+}
+
+.phone-footer__title {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 129.166667%;
+	/* 31/24 */
+	letter-spacing: -2px;
+}
+
+.phone-footer__items {}
+
+.phone-footer__item {}
+
+.phone-footer__link {
+	font-size: 24px;
+	font-weight: 400;
+	letter-spacing: -2px;
+}
+
+.phone-footer__item:not(:last-child) {
+	margin-bottom: 12px;
+}
+
+.column-footer__items {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 208px;
+}
+
+.column-footer__item {}
+
+.column-footer__copy {
+	max-width: 208px;
+	text-align: center;
 }
